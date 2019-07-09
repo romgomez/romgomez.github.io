@@ -228,21 +228,6 @@ footer {
 }
 
 
-/* home section
-#home {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-        align-items: center;
-  text-align: center;
-  /* height: 100vh; */
-  /* color: #ffffff; */
-} */
-
 #home .home-thumb {
   text-align: center;
 }
@@ -402,10 +387,10 @@ footer a:hover {
   height: 100%;
   width: 50%;
   position: fixed;
-  z-index: 1;
+  /* z-index: 1; */
   top: 0;
   overflow-x: hidden;
-  padding-top: 120px;
+  padding-top: 150px;
 }
 
 /* Control the left side */
@@ -419,11 +404,6 @@ footer a:hover {
 
 }
 
-#rightpanel{
-  width: 260;
-  height: 540;
-
-}
 
 /* If you want the content centered horizontally and vertically */
 .centered {
@@ -483,13 +463,18 @@ footer a:hover {
 
 @media (max-width: 700px) {
 
-  #home {height: 100vh;}
+  #home {height: 80vh;}
 
 
   footer {text-align: center;}
   footer .col-sm-6 {
     padding-bottom: 32px;
-
-}
+  }
+  
+  #rightpanel{
+      width: 260;
+      height: 540;
+    
+    }
 
 }

@@ -5,13 +5,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Comparison</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Loading CSS files -->
-  <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap.min.css') }}"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
   <link href='https://fonts.googleapis.com/css?family=Rajdhani:400,500,700' rel='stylesheet' type='text/css'>
-  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
 
 <body>
@@ -34,12 +33,12 @@
         <h3 class="text-center">Latitude</h3>
         <ul class="nav nav-tabs">
           <li role="presentation" class="active"><a href="/">Home</a></li>
-          <li role="presentation"><a href="/temp">Max Temperature</a></li>
+          <li role="presentation"><a href="/temperature">Max Temperature</a></li>
           <li role="presentation"><a href="/humidity">Humidity</a></li>
           <li role="presentation"><a href="/cloudiness">Cloudiness</a></li>
           <li role="presentation"><a href="/windspeed">Wind Speed</a></li>
-          <li role="presentation"><a href="/comparison">Comparison</a></li>
           <li role="presentation"><a href="/data">Data</a></li>
+          <li role="presentation"><a href="/comparison">Comparison</a></li>
         </ul>
       </div>
       </ul>
@@ -95,39 +94,5 @@
             </div>
           </div>
         </div>
-
-    <!-- about section -->
-    <!-- <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <img src='../static/images/windspeed.jpg'
-                style="width:500px; height: 340px;">
-            </div> -->
-            <!-- <div class="col-md-6 col-sm-12">
-              <div class="about-thumb">
-                <div class="section-title">
-                  <h3 class="wow fadeInUp" data-wow-delay="0.4s">DISCUSSION</h3>
-                </div>
-                <div class="wow fadeInUp" data-wow-delay="0.6s">
-                  <p> Through machine learning, DyRK is transforming the way you experience sports entertainment. Our
-                    algorithm does the work for you. Make educated bets today by using our data-driven predictions.</p>
-                  <p> DyRK formed through their shared experience at McMaster-Carr, or the Amazon of industrial supplies and
-                    they provide the best customer service in predictive analytics space.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-      </section>
-    <br>
-    <p>
-      <!-- The scatter plot reporesents 500 stochastically selected cities from -60 Lat (southern hemisphere) to ~ 90 Lat
-      (northern hemisphere). The pattern of the scatter plot does not reveal any trends, as the plots for each city is
-      distrubuted along the latitude range, and accross the cloudiness scale. This would suggest that although the max
-      temperature are found closer to the equator, cloud coverage is not. Solar energy that heats the area by the
-      equator, is eventually dissipated, including the formation of clouds, accross the globe, and as a result of this
-      dynamic system, clouds do not linger in a specific region of the globe. -->
-    </p>
   </div>
 </body>
