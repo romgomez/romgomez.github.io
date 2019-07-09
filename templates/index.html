@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Loading CSS files -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+  <link href='https://fonts.googleapis.com/css?family=Rajdhani:400,500,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dropdown"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Weather & Company</a>
+      </div>
+      <div class="row">
+        <h3 class="text-center">Latitude</h3>
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="/">Home</a></li>
+          <li role="presentation"><a href="/temperature">Max Temperature</a></li>
+          <li role="presentation"><a href="/humidity">Humidity</a></li>
+          <li role="presentation"><a href="/cloudiness">Cloudiness</a></li>
+          <li role="presentation"><a href="/windspeed">Wind Speed</a></li>
+          <li role="presentation"><a href="/comparison">Comparison</a></li>
+          <li role="presentation"><a href="/data">Data</a></li>
+        </ul>
+      </div>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <h3 class="text-center">Other Charts</h3>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"></h3>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-6 col-sm-12">
+              <img src='../static/images/cloudiness.jpg' style="width:500px; height: 340px;"> 
+          </div>
+          <div class="col-md-6 col-sm-12">
+              <img src='../static/images/humidity.jpg' style="width:500px; height: 340px;"> 
+          </div>
+          <div class="col-md-6 col-sm-12">
+              <img src='../static/images/temp.jpg' style="width:500px; height: 340px;"> 
+          </div>
+          <div class="col-md-6 col-sm-12">
+              <img src='../static/images/windspeed.jpg' style="width:500px; height: 340px;"> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="row">
+      <h3 class="text-center">Buttons</h3>
+      <button class="btn btn-default">Default Button</button>
+    </div> -->
+  </div>
+
+</body>
+
+</html>

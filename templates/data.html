@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+
+     
+  <!-- Loading CSS files -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+<link href='https://fonts.googleapis.com/css?family=Rajdhani:400,500,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Weather & Company</a>
+    </div>
+
+
+    <div class="row">
+      <h3 class="text-center">Latitude</h3>
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="/">Home</a></li>
+        <li role="presentation"><a href="/temperature">Max Temperature</a></li>
+        <li role="presentation"><a href="/humidity">Humidity</a></li>
+        <li role="presentation"><a href="/cloudiness">Cloudiness</a></li>
+        <li role="presentation"><a href="/windspeed">Wind Speed</a></li>
+        <li role="presentation"><a href="/comparison">Comparison</a></li>
+        <li role="presentation"><a href="/data">Data</a></li>
+      </ul>
+    </div>
+    </ul>
+  </div>
+  <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1>City Latitude Data</h1>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                </div>
+            </div>
+
+            <div id="#myModel" class="row">
+                <div class="col-md-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>City_ID</th>
+                                <th>City</th>
+                                <th>Cloudiness</th>
+                                <th>Country</th>
+                                <th>Date</th>
+                                <th>Humidity</th>
+                                <th>Lat</th>
+                                <th>Lng</th>
+                                <th>Max Temp</th>
+                                <th>Wind Speed</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="static/js/data.js"></script>
+        <script src="http://d3js.org/d3.v4.min.js"></script>
+
+
+</body>
